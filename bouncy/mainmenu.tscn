@@ -1,82 +1,30 @@
 [gd_scene format=3 uid="uid://c4gspgw8buv81"]
 
-[sub_resource type="FontFile" id="FontFile_d2nv2"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/17/0/ascent = 0.0
-cache/0/17/0/descent = 0.0
-cache/0/17/0/underline_position = 0.0
-cache/0/17/0/underline_thickness = 0.0
-cache/0/17/0/scale = 1.0
-cache/0/18/0/ascent = 0.0
-cache/0/18/0/descent = 0.0
-cache/0/18/0/underline_position = 0.0
-cache/0/18/0/underline_thickness = 0.0
-cache/0/18/0/scale = 1.0
-cache/0/19/0/ascent = 0.0
-cache/0/19/0/descent = 0.0
-cache/0/19/0/underline_position = 0.0
-cache/0/19/0/underline_thickness = 0.0
-cache/0/19/0/scale = 1.0
-cache/0/20/0/ascent = 0.0
-cache/0/20/0/descent = 0.0
-cache/0/20/0/underline_position = 0.0
-cache/0/20/0/underline_thickness = 0.0
-cache/0/20/0/scale = 1.0
-cache/0/21/0/ascent = 0.0
-cache/0/21/0/descent = 0.0
-cache/0/21/0/underline_position = 0.0
-cache/0/21/0/underline_thickness = 0.0
-cache/0/21/0/scale = 1.0
+[ext_resource type="FontFile" uid="uid://chbfsxrishwun" path="res://Evil_Empire.otf" id="1_cmhrf"]
+[ext_resource type="FontVariation" uid="uid://dn4r8468fxfo7" path="res://new_font_variation.tres" id="2_d2nv2"]
+[ext_resource type="Script" uid="uid://dxkfncm3pb5eg" path="res://button.gd" id="3_wgsso"]
+
+[sub_resource type="FontVariation" id="FontVariation_wgsso"]
+base_font = ExtResource("2_d2nv2")
 
 [sub_resource type="LabelSettings" id="LabelSettings_loy4s"]
-font = SubResource("FontFile_d2nv2")
-font_size = 18
+font = ExtResource("2_d2nv2")
+font_size = 30
 
-[sub_resource type="FontFile" id="FontFile_2vkit"]
-cache/0/variation_coordinates = {}
-cache/0/face_index = 0
-cache/0/embolden = 0.0
-cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
-cache/0/spacing_top = 0
-cache/0/spacing_bottom = 0
-cache/0/spacing_space = 0
-cache/0/spacing_glyph = 0
-cache/0/baseline_offset = 0.0
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/17/0/ascent = 0.0
-cache/0/17/0/descent = 0.0
-cache/0/17/0/underline_position = 0.0
-cache/0/17/0/underline_thickness = 0.0
-cache/0/17/0/scale = 1.0
-cache/0/18/0/ascent = 0.0
-cache/0/18/0/descent = 0.0
-cache/0/18/0/underline_position = 0.0
-cache/0/18/0/underline_thickness = 0.0
-cache/0/18/0/scale = 1.0
+[sub_resource type="FontVariation" id="FontVariation_v5jcj"]
+base_font = ExtResource("1_cmhrf")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2nv2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wgsso"]
 bg_color = Color(0.3137255, 0.3137255, 0.3137255, 1)
 
+[sub_resource type="FontVariation" id="FontVariation_1ytid"]
+base_font = ExtResource("1_cmhrf")
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cmhrf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_igs2m"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_loy4s"]
 
@@ -101,7 +49,9 @@ grow_horizontal = 2
 
 [node name="Title" type="Label" parent="Title_container" unique_id=1536561317]
 layout_mode = 2
-text = "Bouncy Castle Defense"
+theme_override_fonts/font = SubResource("FontVariation_wgsso")
+theme_override_font_sizes/font_size = 25
+text = "Wall Castle Defense"
 label_settings = SubResource("LabelSettings_loy4s")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -122,11 +72,12 @@ grow_vertical = 0
 
 [node name="Button" type="Button" parent="Button_container" unique_id=1116161918]
 layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_2vkit")
+theme_override_fonts/font = SubResource("FontVariation_v5jcj")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_d2nv2")
 theme_override_styles/hover = SubResource("StyleBoxFlat_wgsso")
 text = "          Endless mode          "
+script = ExtResource("3_wgsso")
 
 [node name="Button_container2" type="CenterContainer" parent="." unique_id=715954848]
 layout_mode = 1
@@ -144,6 +95,8 @@ grow_vertical = 0
 
 [node name="Button" type="Button" parent="Button_container2" unique_id=512401176]
 layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_1ytid")
 theme_override_styles/normal = SubResource("StyleBoxFlat_cmhrf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_igs2m")
 theme_override_styles/hover = SubResource("StyleBoxFlat_loy4s")
-text = "            Levels (locked)            "
+text = "          Levels (locked)          "
