@@ -307,6 +307,252 @@ position = Vector2(41, -7157)
 [node name="ball90" parent="." unique_id=1576067330 groups=["ball"] instance=ExtResource("5_rj586")]
 position = Vector2(102, -7213)
 
+[node name="ball91" parent="." unique_id=843822014 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(89, -698)
+
+[node name="ball92" parent="." unique_id=1400131329 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(150, -754)
+
+[node name="ball93" parent="." unique_id=1614593078 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(87, -876)
+
+[node name="ball94" parent="." unique_id=1689890761 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(213, -952)
+
+[node name="ball95" parent="." unique_id=1289025673 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(60, -983)
+
+[node name="ball96" parent="." unique_id=594530172 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(247, -1107)
+
+[node name="ball97" parent="." unique_id=152976680 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(152, -1365)
+
+[node name="ball98" parent="." unique_id=487082928 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(112, -1160)
+
+[node name="ball99" parent="." unique_id=1609127268 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(210, -1244)
+
+[node name="ball100" parent="." unique_id=1562682783 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(109, -1300)
+
+[node name="ball101" parent="." unique_id=799966706 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(99, -1482)
+
+[node name="ball102" parent="." unique_id=805928109 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(160, -1538)
+
+[node name="ball103" parent="." unique_id=364314919 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(87, -1714)
+
+[node name="ball104" parent="." unique_id=25546279 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(213, -1790)
+
+[node name="ball105" parent="." unique_id=985655326 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(60, -1821)
+
+[node name="ball106" parent="." unique_id=839532453 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(247, -1945)
+
+[node name="ball107" parent="." unique_id=523318049 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(152, -2203)
+
+[node name="ball108" parent="." unique_id=1175457314 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(112, -1998)
+
+[node name="ball109" parent="." unique_id=574051204 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(210, -2082)
+
+[node name="ball110" parent="." unique_id=670912545 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(109, -2138)
+
+[node name="ball111" parent="." unique_id=1293279184 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(99, -2320)
+
+[node name="ball112" parent="." unique_id=476728716 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(160, -2376)
+
+[node name="ball113" parent="." unique_id=741289768 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(96, -2568)
+
+[node name="ball114" parent="." unique_id=419553929 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(222, -2644)
+
+[node name="ball115" parent="." unique_id=1141950082 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(69, -2675)
+
+[node name="ball116" parent="." unique_id=675738531 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(256, -2799)
+
+[node name="ball117" parent="." unique_id=416003195 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(161, -3057)
+
+[node name="ball118" parent="." unique_id=367820515 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(121, -2852)
+
+[node name="ball119" parent="." unique_id=366514676 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(219, -2936)
+
+[node name="ball120" parent="." unique_id=1977120988 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(118, -2992)
+
+[node name="ball121" parent="." unique_id=1589042053 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(108, -3174)
+
+[node name="ball122" parent="." unique_id=1625425623 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(169, -3230)
+
+[node name="ball123" parent="." unique_id=1672026316 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(106, -3352)
+
+[node name="ball124" parent="." unique_id=942312395 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(232, -3428)
+
+[node name="ball125" parent="." unique_id=1964493075 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(79, -3459)
+
+[node name="ball126" parent="." unique_id=427945855 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(266, -3583)
+
+[node name="ball127" parent="." unique_id=1734745662 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(171, -3841)
+
+[node name="ball128" parent="." unique_id=283371601 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(131, -3636)
+
+[node name="ball129" parent="." unique_id=1020348001 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(229, -3720)
+
+[node name="ball130" parent="." unique_id=1938559716 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(128, -3776)
+
+[node name="ball131" parent="." unique_id=505165380 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(118, -3958)
+
+[node name="ball132" parent="." unique_id=1011906929 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(179, -4014)
+
+[node name="ball133" parent="." unique_id=458061038 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(106, -4190)
+
+[node name="ball134" parent="." unique_id=23071780 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(232, -4266)
+
+[node name="ball135" parent="." unique_id=2090380782 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(79, -4297)
+
+[node name="ball136" parent="." unique_id=1851439804 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(266, -4421)
+
+[node name="ball137" parent="." unique_id=18034599 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(171, -4679)
+
+[node name="ball138" parent="." unique_id=653150422 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(131, -4474)
+
+[node name="ball139" parent="." unique_id=1236322799 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(229, -4558)
+
+[node name="ball140" parent="." unique_id=562139676 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(128, -4614)
+
+[node name="ball141" parent="." unique_id=1311952359 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(118, -4796)
+
+[node name="ball142" parent="." unique_id=2013835809 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(179, -4852)
+
+[node name="ball143" parent="." unique_id=774475132 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(19, -4929)
+
+[node name="ball144" parent="." unique_id=1499402646 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(145, -5005)
+
+[node name="ball145" parent="." unique_id=1609615069 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(-8, -5036)
+
+[node name="ball146" parent="." unique_id=1357450902 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(179, -5160)
+
+[node name="ball147" parent="." unique_id=941560729 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(84, -5418)
+
+[node name="ball148" parent="." unique_id=907164022 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(44, -5213)
+
+[node name="ball149" parent="." unique_id=583361006 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(142, -5297)
+
+[node name="ball150" parent="." unique_id=2022133935 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(41, -5353)
+
+[node name="ball151" parent="." unique_id=1173121948 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(31, -5535)
+
+[node name="ball152" parent="." unique_id=1737365772 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(92, -5591)
+
+[node name="ball153" parent="." unique_id=595012770 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(29, -5713)
+
+[node name="ball154" parent="." unique_id=1855315192 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(155, -5789)
+
+[node name="ball155" parent="." unique_id=779575125 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(2, -5820)
+
+[node name="ball156" parent="." unique_id=881140579 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(189, -5944)
+
+[node name="ball157" parent="." unique_id=903091767 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(94, -6202)
+
+[node name="ball158" parent="." unique_id=1781684602 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(54, -5997)
+
+[node name="ball159" parent="." unique_id=1379010094 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(152, -6081)
+
+[node name="ball160" parent="." unique_id=2053518457 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(51, -6137)
+
+[node name="ball161" parent="." unique_id=435284087 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(41, -6319)
+
+[node name="ball162" parent="." unique_id=749638517 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(102, -6375)
+
+[node name="ball163" parent="." unique_id=1045795820 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(29, -6551)
+
+[node name="ball164" parent="." unique_id=272907559 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(155, -6627)
+
+[node name="ball165" parent="." unique_id=967710601 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(2, -6658)
+
+[node name="ball166" parent="." unique_id=457539917 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(189, -6782)
+
+[node name="ball167" parent="." unique_id=1975464593 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(94, -7040)
+
+[node name="ball168" parent="." unique_id=152545129 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(54, -6835)
+
+[node name="ball169" parent="." unique_id=774101149 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(152, -6919)
+
+[node name="ball170" parent="." unique_id=1479617085 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(51, -6975)
+
+[node name="ball171" parent="." unique_id=1517334182 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(41, -7157)
+
+[node name="ball172" parent="." unique_id=1959587052 groups=["ball"] instance=ExtResource("5_rj586")]
+position = Vector2(102, -7213)
+
 [node name="arrow" type="Area2D" parent="." unique_id=189258396]
 position = Vector2(-352, -15)
 
@@ -424,4 +670,86 @@ autoplay = true
 [connection signal="area_entered" from="ball88" to="ball88" method="_on_area_entered"]
 [connection signal="area_entered" from="ball89" to="ball89" method="_on_area_entered"]
 [connection signal="area_entered" from="ball90" to="ball90" method="_on_area_entered"]
+[connection signal="area_entered" from="ball91" to="ball91" method="_on_area_entered"]
+[connection signal="area_entered" from="ball92" to="ball92" method="_on_area_entered"]
+[connection signal="area_entered" from="ball93" to="ball93" method="_on_area_entered"]
+[connection signal="area_entered" from="ball94" to="ball94" method="_on_area_entered"]
+[connection signal="area_entered" from="ball95" to="ball95" method="_on_area_entered"]
+[connection signal="area_entered" from="ball96" to="ball96" method="_on_area_entered"]
+[connection signal="area_entered" from="ball97" to="ball97" method="_on_area_entered"]
+[connection signal="area_entered" from="ball98" to="ball98" method="_on_area_entered"]
+[connection signal="area_entered" from="ball99" to="ball99" method="_on_area_entered"]
+[connection signal="area_entered" from="ball100" to="ball100" method="_on_area_entered"]
+[connection signal="area_entered" from="ball101" to="ball101" method="_on_area_entered"]
+[connection signal="area_entered" from="ball102" to="ball102" method="_on_area_entered"]
+[connection signal="area_entered" from="ball103" to="ball103" method="_on_area_entered"]
+[connection signal="area_entered" from="ball104" to="ball104" method="_on_area_entered"]
+[connection signal="area_entered" from="ball105" to="ball105" method="_on_area_entered"]
+[connection signal="area_entered" from="ball106" to="ball106" method="_on_area_entered"]
+[connection signal="area_entered" from="ball107" to="ball107" method="_on_area_entered"]
+[connection signal="area_entered" from="ball108" to="ball108" method="_on_area_entered"]
+[connection signal="area_entered" from="ball109" to="ball109" method="_on_area_entered"]
+[connection signal="area_entered" from="ball110" to="ball110" method="_on_area_entered"]
+[connection signal="area_entered" from="ball111" to="ball111" method="_on_area_entered"]
+[connection signal="area_entered" from="ball112" to="ball112" method="_on_area_entered"]
+[connection signal="area_entered" from="ball113" to="ball113" method="_on_area_entered"]
+[connection signal="area_entered" from="ball114" to="ball114" method="_on_area_entered"]
+[connection signal="area_entered" from="ball115" to="ball115" method="_on_area_entered"]
+[connection signal="area_entered" from="ball116" to="ball116" method="_on_area_entered"]
+[connection signal="area_entered" from="ball117" to="ball117" method="_on_area_entered"]
+[connection signal="area_entered" from="ball118" to="ball118" method="_on_area_entered"]
+[connection signal="area_entered" from="ball119" to="ball119" method="_on_area_entered"]
+[connection signal="area_entered" from="ball120" to="ball120" method="_on_area_entered"]
+[connection signal="area_entered" from="ball121" to="ball121" method="_on_area_entered"]
+[connection signal="area_entered" from="ball122" to="ball122" method="_on_area_entered"]
+[connection signal="area_entered" from="ball123" to="ball123" method="_on_area_entered"]
+[connection signal="area_entered" from="ball124" to="ball124" method="_on_area_entered"]
+[connection signal="area_entered" from="ball125" to="ball125" method="_on_area_entered"]
+[connection signal="area_entered" from="ball126" to="ball126" method="_on_area_entered"]
+[connection signal="area_entered" from="ball127" to="ball127" method="_on_area_entered"]
+[connection signal="area_entered" from="ball128" to="ball128" method="_on_area_entered"]
+[connection signal="area_entered" from="ball129" to="ball129" method="_on_area_entered"]
+[connection signal="area_entered" from="ball130" to="ball130" method="_on_area_entered"]
+[connection signal="area_entered" from="ball131" to="ball131" method="_on_area_entered"]
+[connection signal="area_entered" from="ball132" to="ball132" method="_on_area_entered"]
+[connection signal="area_entered" from="ball133" to="ball133" method="_on_area_entered"]
+[connection signal="area_entered" from="ball134" to="ball134" method="_on_area_entered"]
+[connection signal="area_entered" from="ball135" to="ball135" method="_on_area_entered"]
+[connection signal="area_entered" from="ball136" to="ball136" method="_on_area_entered"]
+[connection signal="area_entered" from="ball137" to="ball137" method="_on_area_entered"]
+[connection signal="area_entered" from="ball138" to="ball138" method="_on_area_entered"]
+[connection signal="area_entered" from="ball139" to="ball139" method="_on_area_entered"]
+[connection signal="area_entered" from="ball140" to="ball140" method="_on_area_entered"]
+[connection signal="area_entered" from="ball141" to="ball141" method="_on_area_entered"]
+[connection signal="area_entered" from="ball142" to="ball142" method="_on_area_entered"]
+[connection signal="area_entered" from="ball143" to="ball143" method="_on_area_entered"]
+[connection signal="area_entered" from="ball144" to="ball144" method="_on_area_entered"]
+[connection signal="area_entered" from="ball145" to="ball145" method="_on_area_entered"]
+[connection signal="area_entered" from="ball146" to="ball146" method="_on_area_entered"]
+[connection signal="area_entered" from="ball147" to="ball147" method="_on_area_entered"]
+[connection signal="area_entered" from="ball148" to="ball148" method="_on_area_entered"]
+[connection signal="area_entered" from="ball149" to="ball149" method="_on_area_entered"]
+[connection signal="area_entered" from="ball150" to="ball150" method="_on_area_entered"]
+[connection signal="area_entered" from="ball151" to="ball151" method="_on_area_entered"]
+[connection signal="area_entered" from="ball152" to="ball152" method="_on_area_entered"]
+[connection signal="area_entered" from="ball153" to="ball153" method="_on_area_entered"]
+[connection signal="area_entered" from="ball154" to="ball154" method="_on_area_entered"]
+[connection signal="area_entered" from="ball155" to="ball155" method="_on_area_entered"]
+[connection signal="area_entered" from="ball156" to="ball156" method="_on_area_entered"]
+[connection signal="area_entered" from="ball157" to="ball157" method="_on_area_entered"]
+[connection signal="area_entered" from="ball158" to="ball158" method="_on_area_entered"]
+[connection signal="area_entered" from="ball159" to="ball159" method="_on_area_entered"]
+[connection signal="area_entered" from="ball160" to="ball160" method="_on_area_entered"]
+[connection signal="area_entered" from="ball161" to="ball161" method="_on_area_entered"]
+[connection signal="area_entered" from="ball162" to="ball162" method="_on_area_entered"]
+[connection signal="area_entered" from="ball163" to="ball163" method="_on_area_entered"]
+[connection signal="area_entered" from="ball164" to="ball164" method="_on_area_entered"]
+[connection signal="area_entered" from="ball165" to="ball165" method="_on_area_entered"]
+[connection signal="area_entered" from="ball166" to="ball166" method="_on_area_entered"]
+[connection signal="area_entered" from="ball167" to="ball167" method="_on_area_entered"]
+[connection signal="area_entered" from="ball168" to="ball168" method="_on_area_entered"]
+[connection signal="area_entered" from="ball169" to="ball169" method="_on_area_entered"]
+[connection signal="area_entered" from="ball170" to="ball170" method="_on_area_entered"]
+[connection signal="area_entered" from="ball171" to="ball171" method="_on_area_entered"]
+[connection signal="area_entered" from="ball172" to="ball172" method="_on_area_entered"]
 [connection signal="area_entered" from="wall" to="ball" method="_on_wall_area_entered"]

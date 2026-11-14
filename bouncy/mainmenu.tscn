@@ -66,7 +66,11 @@ grow_horizontal = 2
 layout_mode = 2
 theme_override_fonts/font = SubResource("FontVariation_wgsso")
 theme_override_font_sizes/font_size = 25
-text = "Wall Castle Defense"
+text = "Wall Castle Defense
+
+
+wait 7 seconds
+for wall placing"
 label_settings = SubResource("LabelSettings_loy4s")
 horizontal_alignment = 1
 vertical_alignment = 1
