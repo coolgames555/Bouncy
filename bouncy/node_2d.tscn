@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://mvud320n3mmi" path="res://BG.png" id="1_wtcfe"]
 [ext_resource type="Script" uid="uid://btvyolqf281me" path="res://area_2d.gd" id="2_epypp"]
 [ext_resource type="Texture2D" uid="uid://bihk7xemhpxns" path="res://metalWall.png" id="3_0hol4"]
+[ext_resource type="Script" uid="uid://c3tbtex4s4brm" path="res://new.gd" id="4_0hol4"]
 [ext_resource type="Texture2D" uid="uid://c8whl4xo1vxil" path="res://pixil-frame-0 (1).png" id="4_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://cf5qsqebspkp3" path="res://pixil-frame-0 (3).png" id="5_kdubu"]
 
@@ -54,3 +55,8 @@ texture = ExtResource("5_kdubu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="arrow" unique_id=1549554617]
 position = Vector2(89.5, -68)
 shape = SubResource("RectangleShape2D_2a6dy")
+
+[node name="Button" type="Button" parent="." unique_id=68267185]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("4_0hol4")
