@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cf5qsqebspkp3" path="res://pixil-frame-0 (3).png" id="5_kdubu"]
 [ext_resource type="PackedScene" uid="uid://hxn6g2pf0hog" path="res://ball.tscn" id="5_rj586"]
 [ext_resource type="PackedScene" uid="uid://m1n765o8xhrk" path="res://wall.tscn" id="8_rj586"]
+[ext_resource type="AudioStream" uid="uid://dxxkl00ypug4p" path="res://New_Project.wav" id="9_4d7sh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilxo7"]
 size = Vector2(88.999985, 23.5)
@@ -19,11 +20,12 @@ size = Vector2(5, 10)
 script = ExtResource("1_d21ai")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1911938681]
-position = Vector2(134.5, 241)
+position = Vector2(135, 173)
 scale = Vector2(1.4833333, 1.50625)
 texture = ExtResource("1_wtcfe")
 
 [node name="Metal wall" type="Area2D" parent="." unique_id=1046852628]
+position = Vector2(-286, -72)
 script = ExtResource("2_epypp")
 
 [node name="Sprite2D" type="Sprite2D" parent="Metal wall" unique_id=125285461]
@@ -36,10 +38,10 @@ position = Vector2(0.50000954, -73.75)
 shape = SubResource("RectangleShape2D_ilxo7")
 
 [node name="ball" parent="." unique_id=842314956 instance=ExtResource("5_rj586")]
-position = Vector2(78, 14)
+position = Vector2(-197, -60)
 
 [node name="arrow" type="Area2D" parent="." unique_id=189258396]
-position = Vector2(12, 0)
+position = Vector2(-352, -15)
 
 [node name="Sprite2D" type="Sprite2D" parent="arrow" unique_id=1528791224]
 position = Vector2(89, -62)
@@ -50,10 +52,19 @@ position = Vector2(89.5, -68)
 shape = SubResource("RectangleShape2D_2a6dy")
 
 [node name="Button" type="Button" parent="." unique_id=68267185]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 91.00001
+offset_top = 432.0
+offset_right = 899.0
+offset_bottom = 640.0
+scale = Vector2(0.1100188, 0.107873395)
+icon = ExtResource("3_0hol4")
 script = ExtResource("4_0hol4")
 
 [node name="wall" parent="." unique_id=152226328 groups=["walls"] instance=ExtResource("8_rj586")]
+position = Vector2(-111, -61)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="." unique_id=1773144791]
+stream = ExtResource("9_4d7sh")
+autoplay = true
 
 [connection signal="area_entered" from="wall" to="ball" method="_on_wall_area_entered"]
