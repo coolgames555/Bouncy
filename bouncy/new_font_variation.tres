@@ -1,0 +1,6 @@
+[gd_resource type="FontVariation" format=3 uid="uid://dn4r8468fxfo7"]
+
+[ext_resource type="FontFile" uid="uid://chbfsxrishwun" path="res://Evil_Empire.otf" id="1_ej4o4"]
+
+[resource]
+base_font = ExtResource("1_ej4o4")
