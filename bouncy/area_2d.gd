@@ -8,7 +8,7 @@ func _physics_process(delta):
 		position.y += 70
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton && x == 1:
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and not has_overlapping_bodies():
 			x = 0
 			name = "usedwall"
 			print("locked wall at")
