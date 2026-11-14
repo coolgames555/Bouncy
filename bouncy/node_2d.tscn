@@ -1,11 +1,8 @@
 [gd_scene format=3 uid="uid://kj7rry1cddbh"]
 
 [ext_resource type="Texture2D" uid="uid://mvud320n3mmi" path="res://BG.png" id="1_wtcfe"]
-[ext_resource type="Script" uid="uid://btvyolqf281me" path="res://area_2d.gd" id="2_epypp"]
-[ext_resource type="Texture2D" uid="uid://bihk7xemhpxns" path="res://metalWall.png" id="3_0hol4"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ilxo7"]
-size = Vector2(89, 23)
+[ext_resource type="PackedScene" uid="uid://m1n765o8xhrk" path="res://wall.tscn" id="2_epypp"]
+[ext_resource type="Script" uid="uid://c3tbtex4s4brm" path="res://new.gd" id="4_0hol4"]
 
 [node name="Node2D" type="Node2D" unique_id=1223841040]
 
@@ -14,14 +11,9 @@ position = Vector2(134.5, 241)
 scale = Vector2(1.4833333, 1.50625)
 texture = ExtResource("1_wtcfe")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1046852628]
-script = ExtResource("2_epypp")
+[node name="wall" parent="." unique_id=152226328 instance=ExtResource("2_epypp")]
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=125285461]
-position = Vector2(0.25001526, -73.499985)
-scale = Vector2(0.11062503, 0.11499997)
-texture = ExtResource("3_0hol4")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=453323246]
-position = Vector2(0.5000191, -74)
-shape = SubResource("RectangleShape2D_ilxo7")
+[node name="Button" type="Button" parent="." unique_id=1906605129]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("4_0hol4")
