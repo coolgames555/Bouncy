@@ -11,6 +11,9 @@ base_font = ExtResource("2_d2nv2")
 font = ExtResource("2_d2nv2")
 font_size = 30
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_2vkit"]
+polygon = PackedVector2Array(421, -11, 210, -11, 214, -2, 447, -2)
+
 [sub_resource type="FontVariation" id="FontVariation_v5jcj"]
 base_font = ExtResource("1_cmhrf")
 
@@ -18,6 +21,9 @@ base_font = ExtResource("1_cmhrf")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wgsso"]
 bg_color = Color(0.3137255, 0.3137255, 0.3137255, 1)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_wgsso"]
+polygon = PackedVector2Array(193, 1, 19, 2, 189, -1)
 
 [sub_resource type="FontVariation" id="FontVariation_1ytid"]
 base_font = ExtResource("1_cmhrf")
@@ -28,7 +34,16 @@ base_font = ExtResource("1_cmhrf")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_loy4s"]
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_igs2m"]
+polygon = PackedVector2Array(109.9496, 30, 12.798365, 29, 101.805176, 33)
+
+[sub_resource type="Gradient" id="Gradient_wgsso"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2a6dy"]
+gradient = SubResource("Gradient_wgsso")
+
 [node name="mainmenu" type="Control" unique_id=1738229015]
+light_mask = 5
 layout_mode = 3
 anchors_preset = 5
 anchor_left = 0.5
@@ -56,7 +71,12 @@ label_settings = SubResource("LabelSettings_loy4s")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Title_container" unique_id=1407258338]
+position = Vector2(-214, 7)
+occluder = SubResource("OccluderPolygon2D_2vkit")
+
 [node name="Button_container" type="CenterContainer" parent="." unique_id=984029176]
+z_index = 1
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -79,6 +99,11 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_wgsso")
 text = "          Endless mode          "
 script = ExtResource("3_wgsso")
 
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Button_container" unique_id=163650438]
+z_index = -1
+position = Vector2(2, 2)
+occluder = SubResource("OccluderPolygon2D_wgsso")
+
 [node name="Button_container2" type="CenterContainer" parent="." unique_id=715954848]
 layout_mode = 1
 anchors_preset = 7
@@ -94,9 +119,41 @@ grow_horizontal = 2
 grow_vertical = 0
 
 [node name="Button" type="Button" parent="Button_container2" unique_id=512401176]
+z_index = 1
 layout_mode = 2
 theme_override_fonts/font = SubResource("FontVariation_1ytid")
 theme_override_styles/normal = SubResource("StyleBoxFlat_cmhrf")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_igs2m")
 theme_override_styles/hover = SubResource("StyleBoxFlat_loy4s")
 text = "          Levels (locked)          "
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Button_container2" unique_id=336422448]
+position = Vector2(0, -27)
+scale = Vector2(1.7189695, 1)
+occluder = SubResource("OccluderPolygon2D_igs2m")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1424350423]
+z_index = -1
+color = Color(0, 0, 0, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="CanvasModulate" unique_id=1918909278]
+z_index = -10
+position = Vector2(281, 354)
+rotation = 0.7271178
+scale = Vector2(22.212858, 11.322516)
+color = Color(0.96855015, 0.70440733, 0.6059664, 1)
+energy = 2.97
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_2a6dy")
+texture_scale = 1.19
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1184589401]
+z_index = -1
+layout_mode = 0
+offset_left = -152.0
+offset_top = -101.0
+offset_right = -112.0
+offset_bottom = -61.0
+scale = Vector2(7.966011, 15.393247)
+mouse_filter = 2
+color = Color(0.26438904, 0.264389, 0.264389, 1)
