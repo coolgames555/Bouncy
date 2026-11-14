@@ -1,22 +1,22 @@
 [gd_scene format=3 uid="uid://kj7rry1cddbh"]
 
+[ext_resource type="Script" uid="uid://dr08udfggj6eg" path="res://node_2d.gd" id="1_d21ai"]
 [ext_resource type="Texture2D" uid="uid://mvud320n3mmi" path="res://BG.png" id="1_wtcfe"]
 [ext_resource type="Script" uid="uid://btvyolqf281me" path="res://area_2d.gd" id="2_epypp"]
 [ext_resource type="Texture2D" uid="uid://bihk7xemhpxns" path="res://metalWall.png" id="3_0hol4"]
 [ext_resource type="Script" uid="uid://c3tbtex4s4brm" path="res://new.gd" id="4_0hol4"]
-[ext_resource type="Texture2D" uid="uid://c8whl4xo1vxil" path="res://pixil-frame-0 (1).png" id="4_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://cf5qsqebspkp3" path="res://pixil-frame-0 (3).png" id="5_kdubu"]
+[ext_resource type="PackedScene" uid="uid://hxn6g2pf0hog" path="res://ball.tscn" id="5_rj586"]
+[ext_resource type="PackedScene" uid="uid://m1n765o8xhrk" path="res://wall.tscn" id="8_rj586"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilxo7"]
 size = Vector2(88.999985, 23.5)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_2a6dy"]
-radius = 5.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2a6dy"]
 size = Vector2(5, 10)
 
 [node name="Node2D" type="Node2D" unique_id=1223841040]
+script = ExtResource("1_d21ai")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1911938681]
 position = Vector2(134.5, 241)
@@ -35,15 +35,8 @@ texture = ExtResource("3_0hol4")
 position = Vector2(0.50000954, -73.75)
 shape = SubResource("RectangleShape2D_ilxo7")
 
-[node name="ball" type="Area2D" parent="." unique_id=116085679]
-
-[node name="Sprite2D" type="Sprite2D" parent="ball" unique_id=325898886]
-position = Vector2(89, -62)
-texture = ExtResource("4_q6r6c")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ball" unique_id=468348712]
-position = Vector2(89, -73)
-shape = SubResource("CircleShape2D_2a6dy")
+[node name="ball" parent="." unique_id=842314956 instance=ExtResource("5_rj586")]
+position = Vector2(78, 14)
 
 [node name="arrow" type="Area2D" parent="." unique_id=189258396]
 position = Vector2(12, 0)
@@ -60,3 +53,7 @@ shape = SubResource("RectangleShape2D_2a6dy")
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("4_0hol4")
+
+[node name="wall" parent="." unique_id=152226328 groups=["walls"] instance=ExtResource("8_rj586")]
+
+[connection signal="area_entered" from="wall" to="ball" method="_on_wall_area_entered"]
