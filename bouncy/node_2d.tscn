@@ -7,35 +7,30 @@
 [ext_resource type="Texture2D" uid="uid://c8whl4xo1vxil" path="res://pixil-frame-0 (1).png" id="4_q6r6c"]
 [ext_resource type="Texture2D" uid="uid://cf5qsqebspkp3" path="res://pixil-frame-0 (3).png" id="5_kdubu"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ilxo7"]
-size = Vector2(88.999985, 23.5)
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_2a6dy"]
 radius = 5.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2a6dy"]
 size = Vector2(5, 10)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
+size = Vector2(269.50146, 123.408875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d21ai"]
+size = Vector2(10.824256, 440.05365)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ilxo7"]
+size = Vector2(88.999985, 23.5)
+
 [node name="Node2D" type="Node2D" unique_id=1223841040]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1911938681]
-position = Vector2(134.5, 241)
+position = Vector2(135, 193)
 scale = Vector2(1.4833333, 1.50625)
 texture = ExtResource("1_wtcfe")
 
-[node name="Metal wall" type="Area2D" parent="." unique_id=1046852628]
-script = ExtResource("2_epypp")
-
-[node name="Sprite2D" type="Sprite2D" parent="Metal wall" unique_id=125285461]
-position = Vector2(0.25001526, -73.499985)
-scale = Vector2(0.11062503, 0.11499997)
-texture = ExtResource("3_0hol4")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Metal wall" unique_id=453323246]
-position = Vector2(0.50000954, -73.75)
-shape = SubResource("RectangleShape2D_ilxo7")
-
 [node name="ball" type="Area2D" parent="." unique_id=116085679]
+position = Vector2(-202, -73)
 
 [node name="Sprite2D" type="Sprite2D" parent="ball" unique_id=325898886]
 position = Vector2(89, -62)
@@ -46,7 +41,7 @@ position = Vector2(89, -73)
 shape = SubResource("CircleShape2D_2a6dy")
 
 [node name="arrow" type="Area2D" parent="." unique_id=189258396]
-position = Vector2(12, 0)
+position = Vector2(-79, -53)
 
 [node name="Sprite2D" type="Sprite2D" parent="arrow" unique_id=1528791224]
 position = Vector2(89, -62)
@@ -60,3 +55,39 @@ shape = SubResource("RectangleShape2D_2a6dy")
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("4_0hol4")
+
+[node name="screen wall" type="StaticBody2D" parent="." unique_id=953522999]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="screen wall" unique_id=1827742207]
+position = Vector2(134.61417, -13.669474)
+rotation = 3.1415927
+shape = SubResource("RectangleShape2D_kdubu")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="screen wall" unique_id=1578089195]
+position = Vector2(137, 422.29556)
+rotation = -3.1415925
+shape = SubResource("RectangleShape2D_kdubu")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="screen wall" unique_id=1240055069]
+position = Vector2(-3.8147027, 212.10713)
+rotation = -0.009035796
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_d21ai")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="screen wall" unique_id=2069601060]
+position = Vector2(274.41232, 209.99628)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_d21ai")
+
+[node name="Metal wall" type="Area2D" parent="." unique_id=1800098741]
+position = Vector2(-61, -49)
+script = ExtResource("2_epypp")
+
+[node name="Sprite2D" type="Sprite2D" parent="Metal wall" unique_id=125285461]
+position = Vector2(0.25001526, -73.499985)
+scale = Vector2(0.11062503, 0.11499997)
+texture = ExtResource("3_0hol4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Metal wall" unique_id=453323246]
+position = Vector2(0.50000954, -73.75)
+shape = SubResource("RectangleShape2D_ilxo7")
