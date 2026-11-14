@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dfr6yb37wjgeu"]
+
+[ext_resource type="Script" uid="uid://q1pq3u1603vi" path="res://catapult.gd" id="1_jxyuq"]
+[ext_resource type="Texture2D" uid="uid://fw3bkgbphd20" path="res://pixil-frame-0.png" id="2_jxyuq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j1itr"]
+radius = 21.552261
+
+[node name="ball" type="Area2D" unique_id=842314956]
+script = ExtResource("1_jxyuq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=574517756]
+position = Vector2(13.8671875, 9.3671875)
+scale = Vector2(0.9253125, 0.8653125)
+texture = ExtResource("2_jxyuq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366567336]
+position = Vector2(14, 9)
+shape = SubResource("CircleShape2D_j1itr")
