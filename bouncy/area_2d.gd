@@ -19,7 +19,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			a = 0
 			name = "usedwall"
 			print("locked wall at")
-			await get_tree().create_timer(7.0).timeout
+			await get_tree().create_timer(3.0).timeout
 			a = 1
 		
 
