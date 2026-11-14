@@ -8,12 +8,17 @@
 [ext_resource type="Texture2D" uid="uid://cf5qsqebspkp3" path="res://pixil-frame-0 (3).png" id="5_kdubu"]
 [ext_resource type="PackedScene" uid="uid://hxn6g2pf0hog" path="res://ball.tscn" id="5_rj586"]
 [ext_resource type="PackedScene" uid="uid://m1n765o8xhrk" path="res://wall.tscn" id="8_rj586"]
+[ext_resource type="Script" uid="uid://q1pq3u1603vi" path="res://catapult.gd" id="9_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://fw3bkgbphd20" path="res://pixil-frame-0.png" id="10_hqns4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilxo7"]
 size = Vector2(88.999985, 23.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2a6dy"]
 size = Vector2(5, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uj8ga"]
+size = Vector2(40, 42)
 
 [node name="Node2D" type="Node2D" unique_id=1223841040]
 script = ExtResource("1_d21ai")
@@ -23,7 +28,7 @@ position = Vector2(134.5, 241)
 scale = Vector2(1.4833333, 1.50625)
 texture = ExtResource("1_wtcfe")
 
-[node name="Metal wall" type="Area2D" parent="." unique_id=1046852628]
+[node name="Metal wall" type="Area2D" parent="." unique_id=1046852628 groups=["wall"]]
 script = ExtResource("2_epypp")
 
 [node name="Sprite2D" type="Sprite2D" parent="Metal wall" unique_id=125285461]
@@ -54,6 +59,24 @@ offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("4_0hol4")
 
-[node name="wall" parent="." unique_id=152226328 groups=["walls"] instance=ExtResource("8_rj586")]
+[node name="wall" parent="." unique_id=152226328 groups=["wall"] instance=ExtResource("8_rj586")]
 
+[node name="catapult" type="Area2D" parent="." unique_id=1240124901]
+position = Vector2(12, 0)
+script = ExtResource("9_ir8iy")
+
+[node name="Sprite2D" type="Sprite2D" parent="catapult" unique_id=1565782342]
+position = Vector2(13, -4)
+scale = Vector2(1.14, 1.16)
+texture = ExtResource("10_hqns4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="catapult" unique_id=1752328797]
+position = Vector2(13, -5)
+shape = SubResource("RectangleShape2D_uj8ga")
+
+[connection signal="area_entered" from="ball" to="." method="_on_area_entered"]
+[connection signal="area_entered" from="ball" to="ball" method="_on_area_entered"]
+[connection signal="body_entered" from="ball" to="ball" method="_on_body_entered"]
+[connection signal="area_entered" from="wall" to="." method="_on_wall_area_entered"]
 [connection signal="area_entered" from="wall" to="ball" method="_on_wall_area_entered"]
+[connection signal="area_entered" from="catapult" to="catapult" method="_on_area_entered"]
