@@ -1,6 +1,14 @@
 extends Area2D
+var x = 1
 func _physics_process(delta):
-	position = get_global_mouse_position()
-	position.y += 70
+	if x == 1:
+		position = get_global_mouse_position()
+		position.y += 70
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			x = 0
+	
+		
 	
 	
