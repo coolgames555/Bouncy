@@ -38,7 +38,7 @@ position = Vector2(0.50000954, -73.75)
 shape = SubResource("RectangleShape2D_ilxo7")
 
 [node name="ball" parent="." unique_id=842314956 instance=ExtResource("5_rj586")]
-position = Vector2(-197, -60)
+position = Vector2(77, -92)
 
 [node name="arrow" type="Area2D" parent="." unique_id=189258396]
 position = Vector2(-352, -15)
@@ -60,11 +60,12 @@ scale = Vector2(0.1100188, 0.107873395)
 icon = ExtResource("3_0hol4")
 script = ExtResource("4_0hol4")
 
-[node name="wall" parent="." unique_id=152226328 groups=["walls"] instance=ExtResource("8_rj586")]
-position = Vector2(-111, -61)
+[node name="wall" parent="." unique_id=152226328 groups=["wall", "walls"] instance=ExtResource("8_rj586")]
+position = Vector2(23, -57)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="." unique_id=1773144791]
 stream = ExtResource("9_4d7sh")
 autoplay = true
 
+[connection signal="area_entered" from="ball" to="ball" method="_on_area_entered"]
 [connection signal="area_entered" from="wall" to="ball" method="_on_wall_area_entered"]
